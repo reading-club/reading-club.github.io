@@ -1,0 +1,27 @@
+---
+layout: page
+title: Issues
+subtitle:
+sitemap:
+  priority: 0.9
+---
+
+<h1>Issues</h1>
+
+<div id="issues"></div>
+
+<script>
+var urlToGetAllOpenBugs = "https://api.github.com/repos/reading-club/reading-club.github.io/issues";
+
+$(document).ready(function () {
+    $.getJSON(urlToGetAllOpenBugs, function (allIssues) {
+        $("#issues").append("found " + allIssues.length + " issues</br>");
+        $.each(allIssues, function (i, issue) {
+            $("#issues")
+                .append("<b>" + issue.number + " - " + issue.title + "</b></br>")
+                .append("created at: " + issue.created_at + "</br>")
+                .append(issue.body + "</br></br></br>");
+        });
+    });
+});
+</script>

@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title> Artificial Neural Network —  &raquo;  Reading Club</title>
+<title> Issues —  &raquo;  Reading Club</title>
 <meta name="description" content="Reading club rocks
 ">
-<meta name="keywords" content="">
-<link rel="canonical" href="/clubs/ann.html">
+
+<link rel="canonical" href="/issues.html">
         
 
 
@@ -16,7 +16,7 @@
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Artificial Neural Network" />
+<meta name="twitter:title" content="Issues" />
 <meta name="twitter:description" content="Reading club rocks
 " />
 <meta name="twitter:image" content="" />
@@ -28,10 +28,10 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Artificial Neural Network">
+<meta property="og:title" content="Issues">
 <meta property="og:description" content="Reading club rocks
 ">
-<meta property="og:url" content="/clubs/ann.html">
+<meta property="og:url" content="/issues.html">
 <meta property="og:site_name" content="Reading Club">
 
         <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
@@ -68,16 +68,29 @@
 
 
             <h1 class="page-title">
-    <div class="page-title__text">Artificial Neural Network</div>
+    <div class="page-title__text">Issues</div>
     <div class="page-title__subtitle"></div>
 </h1>
 
-<div style="text-align: center;border: 1px solid #000;padding: 1em;">
+<h1>Issues</h1>
 
-<span>Schedule: 10:00 PM, Sunday, GMT+8 </span>
-</div>
+<div id="issues"></div>
 
-<p>Please refer to the github repo: <a href="https://github.com/reading-club/ANN">reading-club/ANN</a>.</p>
+<script>
+var urlToGetAllOpenBugs = "https://api.github.com/repos/reading-club/reading-club.github.io/issues";
+
+$(document).ready(function () {
+    $.getJSON(urlToGetAllOpenBugs, function (allIssues) {
+        $("#issues").append("found " + allIssues.length + " issues</br>");
+        $.each(allIssues, function (i, issue) {
+            $("#issues")
+                .append("<b>" + issue.number + " - " + issue.title + "</b></br>")
+                .append("created at: " + issue.created_at + "</br>")
+                .append(issue.body + "</br></br></br>");
+        });
+    });
+});
+</script>
 
 
 <div class="explore">
