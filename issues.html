@@ -6,21 +6,23 @@ sitemap:
   priority: 0.9
 ---
 
-<h1>Issues</h1>
+<h1>ANN Discussions</h1>
 
-<div id="issues"></div>
+<div id="issues" markdown="1"></div>
+
+<!-- https://api.github.com/repos/emptymalei/emptymalei.github.io/issues?state=open -->
 
 <script>
 var urlToGetAllOpenBugs = "https://api.github.com/repos/reading-club/reading-club.github.io/issues";
 
 $(document).ready(function () {
     $.getJSON(urlToGetAllOpenBugs, function (allIssues) {
-        $("#issues").append("found " + allIssues.length + " issues</br>");
+        $("#issues").append("<div style='padding-bottom:1em;'>We have " + allIssues.length + " discussions</div>");
         $.each(allIssues, function (i, issue) {
             $("#issues")
-                .append("<b>" + issue.number + " - " + issue.title + "</b></br>")
-                .append("created at: " + issue.created_at + "</br>")
-                .append(issue.body + "</br></br></br>");
+                .append("<b>" + issue.number + " - " + issue.title + "</b> ")
+                .append("( " + issue.created_at + " )</br></br>")
+                .append("<div style='padding-left:2em;' class='issue'>" + markdown.toHTML( issue.body ) + "</div></br></br></br>");
         });
     });
 });
