@@ -4,10 +4,27 @@ layout: default
 {% include page/title.html %}
 
 <div style="text-align: center;border: 1px solid #000;padding: 1em;">
-
-<span>Schedule: {{ page.schedule }} </span>
+<span style="display:block;">Schedule: {{ page.schedule }} </span>
 </div>
+
+
+
 
 {{ content }}
 
+
+{% if page.gitter %}
+<span style="display:block;text-align:center;margin-top:5em;"><button class="js-gitter-toggle-chat-button btn"><i class="fa fa-comments" aria-hidden="true"></i> Toggle Chat </button></span>
+{% endif %}
+
 {% include page/relclubs.html %}
+
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: '{{ page.gitter }}',
+    activationElement: false
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>

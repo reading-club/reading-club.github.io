@@ -6,6 +6,10 @@ body {
   color: #333333;
   background-color: #F5F5F5; }
 
+li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
+
 a {
   color: #828282;
   font-weight: bold;
