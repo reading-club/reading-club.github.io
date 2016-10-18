@@ -23,7 +23,7 @@ gitter: reading-club/Lobby
         <br>
         <span class="post-teaser__references"><i class="fa fa-paperclip" aria-hidden="true"></i> References: </span><br>
         {% for item in post.ref %}
-        <span class="post-teaser__reflist">{{ item }}</span>
+        <span class="post-teaser__reflist"><a href="{{ item }}">{{ item }}</a></span>
         {% endfor %}
         </div>
     
