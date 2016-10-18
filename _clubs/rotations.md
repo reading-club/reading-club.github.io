@@ -1,6 +1,6 @@
 ---
 layout: clubs
-title:  "The 5 Weeks"
+title:  "The 5-Week+"
 subtitle: ""
 info: 10:00 PM, Sunday, GMT+8
 status: OPEN
