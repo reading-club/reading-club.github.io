@@ -21,7 +21,16 @@ google_analytics: 'UA-81870366-1'
 collections:
   clubs:
     output: true
+  rotations:
+    output: true
 
+
+defaults:
+  - scope:
+      path: ""
+      type: rotations
+    values:
+      gitter: reading-club/Lobby
 
 # Syntax highlighting
 highlightstyle: ''

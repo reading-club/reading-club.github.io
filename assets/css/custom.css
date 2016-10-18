@@ -19,3 +19,23 @@ a:visited {
     border-radius: 3px;
 }
 .btn:hover,#goog-wm-sb:hover{background-color:#fff;color:#000}
+
+.post-teaser__infoblock {
+    margin-top: 0.5em;
+}
+.post-teaser__reflist {
+    padding-left: 1em;
+}
+.post-teaser__reflist:before {
+    content: "\00a0-\00a0"
+}
+.post-teaser__status {
+
+}
+#font-page-title {
+    margin-bottom: 3em;
+    text-align: center;
+}
+a:hover {
+    text-decoration: underline;
+}

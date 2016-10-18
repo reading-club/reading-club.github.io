@@ -3,7 +3,8 @@ layout: clubs
 title:  "Artificial Neural Network"
 subtitle: ""
 date:   2016-07-23 21:51:00
-schedule: 10:00 PM, Sunday, GMT+8
+status: CLOSED
+info: 10:00 PM, Sunday, GMT+8
 gitter: reading-club/ann
 ---
 
