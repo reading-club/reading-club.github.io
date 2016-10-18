@@ -1,5 +1,5 @@
 Week1
-----------
+=======
 
 Is cortical connectivity optimized for storing information? 
 ---------------------------------------------------------------------------
@@ -12,7 +12,7 @@ paper source: http://www.nature.com/neuro/journal/v19/n5/full/nn.4286.html
 
 
 Week2
------------
+=========
 
 Popularity versus similarity in growing networks
 --------------------------------------------------
@@ -25,7 +25,7 @@ paper source: http://www.nature.com/nature/journal/v489/n7417/abs/nature11459.ht
 
 
 Week3
-------
+======
 
 
 Computing the Meanings of Words in Reading: Cooperative Division of Labor Between Visual and Phonological Processes
@@ -39,7 +39,7 @@ paper source: http://psycnet.apa.org/psycinfo/2004-15929-005
 
 
 Week4
--------
+========
 
 Flexible frequency control of cortical oscillations enables computations required for working memory
 --------------------------------------------------------------------------------------
@@ -51,7 +51,7 @@ paper source: http://www.pnas.org/content/110/31/12828.short
 
 
 Week5
---------
+==========
 
 Playing Atari with Deep Reinforcement Learning
 ------------------------------------------------
