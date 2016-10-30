@@ -58,8 +58,8 @@ The feedforward network could present (or save) information, because the neuron 
 
 Current numerical research usually starts from a specific connection pattern, It is unclear whether cortical connectivity obeys the rules postulated by these models.
 
-### learning algorism
-So current study started from a possibly fully connection state, using **perceptron learning algorism** to classify total inputs (determine outputs). Patterns to be learned determined the synaptic weights space.
+### learning algorithm
+So current study started from a possibly fully connection state, using **perceptron learning algorithm** to classify total inputs (determine outputs). Patterns to be learned determined the synaptic weights space.
 
 <figure markdown="1">
 ![]({{ site.baseurl }}/assets/posts/is-brain-optimal-for-information-storage/perceptron.png)
@@ -137,7 +137,7 @@ The same phenomenon of higher reciprocal connection probability was also observe
 
 How to realize the function of memory in ANN?
 
-Use tempotron learning algorism?
+Use tempotron learning algorithm?
 <figure markdown="1">
 ![]({{ site.baseurl }}/assets/posts/is-brain-optimal-for-information-storage/tempotron.png)
 </figure>
