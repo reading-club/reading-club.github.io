@@ -39,3 +39,252 @@ a:visited {
 a:hover {
     text-decoration: underline;
 }
+
+/* The alert message box */
+.alert--box {
+    padding: 20px;
+    /*background-color: #f44336; */
+    /*color: white;*/
+    margin-bottom: 15px;
+    border: 1px solid #f44336;
+}
+/* The alert message box */
+.notification--box {
+    padding: 20px;
+    /*background-color: #4CAF50; */
+    /*color: white;*/
+    margin-bottom: 15px;
+    border: 1px solid #BDE5F8;
+}
+.title-notification--box {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-size: 120%;
+}
+
+.notes--extra {
+    padding:1em 1em 0 1.5em;margin:1.5em 0;border:2px solid #BDE5F8;color:#999;line-height:1.8;border-left:.75em solid #ccc
+}
+.notes--extra h1 {
+    text-align:center
+}
+.notes--extra h2 {
+    text-align:center
+}
+.notes--extra h3 {
+    text-align:center
+}
+.notes--extra h4 {
+    text-align:center
+}
+.notes--extra h5 {
+    text-align:center
+}
+hr.paragraph {
+    padding:0;border:none;border-top:medium double #333;color:#333;text-align:center
+}
+hr.paragraph:after {
+    content:"§";display:inline-block;position:relative;top:-0.9em;font-size:1em;padding:0 0.25em;background:white
+}
+.notes--info,.notes--success,.notes--warning,.notes--error {
+    padding:20px;margin:10px 0
+}
+.notes--info:before,.notes--success:before,.notes--warning:before,.notes--error:before { 
+    font-family:FontAwesome;
+    font-style:normal;
+    font-weight:400;
+    speak:none;
+    display:inline-block;
+    text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;margin-left:.2em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale
+}
+.notes--info:before {
+    content:"\f05a";padding-bottom:1em;opacity:0.3
+}
+.notes--success:before {
+    content:'\f00c';padding-bottom:1em;opacity:0.3
+}
+.notes--warning:before {
+    content:'\f071';padding-bottom:1em;opacity:0.3
+}
+.notes--error:before{
+    content:'\f057';padding-bottom:1em;opacity:0.3
+}
+.notes--info{
+    border:2px solid #BDE5F8
+}
+.notes--success{
+    border:2px solid #DFF2BF
+}
+.notes--warning{
+    border:2px solid #FEEFB3
+}
+.notes--error{
+    border:2px solid #FFBABA
+}
+
+
+#snackbar--button {
+  position: fixed; /* Sit on top of the screen */
+  right: 1em;
+  bottom: 1em;
+  display:inline-block;
+  overflow: auto;
+  background-color: #333;
+  color: white;
+  white-space: nowrap;
+  margin:0px auto;
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    right: 1em; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.1s;
+    animation: fadein 0.1s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+
+
+#markdown-toc {
+    border-width: thin;
+    border-color: #9C9C9C;
+    padding: 1em 1em 1em 2em;
+    white-space: nowrap;
+    display: inline-block;
+    float: right;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    color: #9C9C9C;
+    max-width: 30%;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+#markdown-toc>li {
+    list-style: square;
+}
+#markdown-toc>li>ul {
+    padding-left: 1em;
+}
+#markdown-toc>li>ul>li {
+    list-style: disc;
+}
+h2 {
+    margin-top: 2em !important;
+    font-weight: bold;
+}
+h3 {
+    margin-top: 1.5em !important;
+    font-weight: normal;
+}
+ol {
+    list-style-type: decimal !important;
+    padding-left: 2em;
+    padding-bottom: 1em;
+}
+ul {
+    list-style-type: square;
+    padding-left: 2em;
+    padding-bottom: 1em;
+}
+ul>li>ul {
+    list-style-type: disc;
+}
+
+strong {
+    font-weight: bold;
+}
+em {
+    font-style: italic;
+}
+
+figure {
+    margin-top: 2em;
+    margin-bottom: 2em; 
+}
+figure > figcaption {
+    padding: 0.5em 1em 0.75em 1em;
+    color: #808080;
+    border-left: 5px solid #c7c7c7;
+    border-right: 5px solid #c7c7c7;
+    background: #e8e8e8;
+    margin: -1em 0em 1em 0em;
+    font-size: 90%;
+}
+.footnotes {
+    border-top: 2px solid #e0e0e0;
+    padding-top: 1em;
+    margin-top: 2em;
+}
+sub, sup {
+  /* Specified in % so that the sup/sup is the
+     right size relative to the surrounding text */
+  font-size: 75%;
+
+  /* Zero out the line-height so that it doesn't
+     interfere with the positioning that follows */
+  line-height: 0;
+
+  /* Where the magic happens: makes all browsers position
+     the sup/sup properly, relative to the surrounding text */
+  position: relative;
+
+  /* Note that if you're using Eric Meyer's reset.css, this
+     is already set and you can remove this rule */
+  vertical-align: baseline;
+}
+
+sup {
+  /* Move the superscripted text up */
+  top: -0.5em;
+}
+sup > a {
+    border-bottom: none !important;
+    border-top:  none !important;
+}
+
+sub {
+  /* Move the subscripted text down, but only
+     half as far down as the superscript moved up */
+  bottom: -0.25em;
+}

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Is cortical connectivity optimized for storing information?  — Is brain optimal for information storage? &raquo;  Reading Club</title>
+<meta name="description" content="Reading club rocks
+">
+<meta name="keywords" content="">
+<link rel="canonical" href="/5weekplus/week1.html">
+
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+
+<script src="/assets/markdown.min.js"></script>
+
+<!-- MathJax -->
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ TeX: { extensions: ["color.js","cancel.js", "AMSmath.js", "AMSsymbols.js"] }});
+  </script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+    MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+      cancel: ["Extension","cancel"]
+      });
+   });
+   </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        inlineMath: [['$','$'], ['\\(','\\)']]
+      }
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      processEscapes: true
+    }
+  });
+</script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        overlr: ['\\overset\\leftrightarrow{\#1}',1],
+        overl: ['\\overset\leftarrow{\#1}',1],
+        overr: ['\\overset\rightarrow{\#1}',1],
+        bra: ['\\left\\langle \#1\\right|',1],
+        ket: ['\\left| \#1\\right\\rangle',1],
+        braket: ['\\langle \#1 \\mid \#2 \\rangle',2],
+        avg: ['\\left< \#1 \\right>',1],
+        slashed: ['\\cancel{\#1}',1],
+        bold: ['\\boldsymbol{\#1}',1],
+        sech: ['\\operatorname{sech}{\#1}',1],
+        csch: ['\\operatorname{csch}{\#1}',1]
+      }
+    }
+  });
+  </script>
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/assets/favico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/assets/favico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favico/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/assets/favico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+        
+
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Is cortical connectivity optimized for storing information? " />
+<meta name="twitter:description" content="Reading club rocks
+" />
+<meta name="twitter:image" content="" />
+
+<!-- Google plus -->
+<meta name="author" content="">
+<link rel="author" href="">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Is cortical connectivity optimized for storing information? ">
+<meta property="og:description" content="Reading club rocks
+">
+<meta property="og:url" content="/5weekplus/week1.html">
+<meta property="og:site_name" content="Reading Club">
+
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/assets/vendor/normalize-css/normalize.css">
+<link rel="stylesheet" href="/css/main.css">
+
+  <link rel="stylesheet" href="/assets/vendor/highlight/styles/solarized_dark.css">
+
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="/assets/css/custom.css">
+
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="navigation">
+        <a href="/" class="logo">Reading Club</a>
+
+        <ul class="menu">
+            
+            <li class="menu__entry"><a href="/coordination">Coordination</a></li>
+            
+            <li class="menu__entry"><a href="/members">Members</a></li>
+            
+            <li class="menu__entry"><a href="/about">About</a></li>
+            
+            <!-- <li class="menu__entry"><a href="/coordination">Coordinate</a></li>
+            <li class="menu__entry"><a href="/about">About</a></li> -->
+            <!-- <li class="menu__entry"><a href="/">Blog</a></li> -->
+        </ul>
+    </div>
+
+    <ul class="social-links">
+        
+        <a href="https://github.com/reading-club/reading-club.github.io/issues/new" class="social-links__entry" target="_blank">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            </a>
+        
+        
+            <a href="https://github.com/reading-club" class="social-links__entry" target="_blank">
+                <i class="fa fa-github"></i>
+            </a>
+        
+
+        
+    </ul>
+</header>
+
+
+            <h1 class="page-title">
+    <div class="page-title__text">Is cortical connectivity optimized for storing information? </div>
+    <div class="page-title__subtitle">Is brain optimal for information storage?</div>
+</h1>
+
+
+<!-- <div style="text-align: center;border: 1px solid #000;padding: 1em;">
+<span style="display:block;">Schedule: 2016-10-30 22:00:00, GMT+8 </span>
+</div> -->
+
+
+<div style="border-top: 1px solid #000;border-bottom: 1px solid #000;padding: 1em;">
+<div class="post-teaser" style="margin-bottom: 0.5em !important;">
+        <div class="post-teaser__infoblock">
+        <span class="post-teaser__schedule">
+				<i class="fa fa-calendar-o" aria-hidden="true"></i> Date: 2016-10-30 22:00:00, GMT+8</span>
+        <br>
+        <span class="post-teaser__speaker"><i class="fa fa-user" aria-hidden="true"></i> Speaker: ErbB4</span>
+        <br>
+        <span class="post-teaser__references"><i class="fa fa-paperclip" aria-hidden="true"></i> References: </span><br>
+        
+        <span class="post-teaser__reflist"><a href="http://www.nature.com/neuro/journal/v19/n5/full/nn.4286.html">http://www.nature.com/neuro/journal/v19/n5/full/nn.4286.html</a></span>
+        
+        </div>
+    
+</div>
+</div>
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#topic-of-interest" id="markdown-toc-topic-of-interest">Topic of interest</a></li>
+  <li><a href="#two-hypotheses-of-information-storage-in-the-brain" id="markdown-toc-two-hypotheses-of-information-storage-in-the-brain">Two hypotheses of information storage in the brain</a>    <ul>
+      <li><a href="#attractor-state-in-a-recurrent-network" id="markdown-toc-attractor-state-in-a-recurrent-network">attractor state in a recurrent network</a></li>
+      <li><a href="#firing-sequences-in-a-feedforward-network" id="markdown-toc-firing-sequences-in-a-feedforward-network">firing sequences in a feedforward network</a></li>
+    </ul>
+  </li>
+  <li><a href="#motivation-from-models-to-connection-style" id="markdown-toc-motivation-from-models-to-connection-style">Motivation from models to connection style</a>    <ul>
+      <li><a href="#learning-algorism" id="markdown-toc-learning-algorism">learning algorism</a></li>
+      <li><a href="#network-setting" id="markdown-toc-network-setting">network setting</a></li>
+      <li><a href="#learned-patterns-and-synaptic-weights" id="markdown-toc-learned-patterns-and-synaptic-weights">learned patterns and synaptic weights</a></li>
+      <li><a href="#synaptic-integration-and-perceptron-classification" id="markdown-toc-synaptic-integration-and-perceptron-classification">synaptic integration and perceptron classification</a></li>
+    </ul>
+  </li>
+  <li><a href="#what-are-the-network-connections-when-the-number-of-learned-patterns-reaches-maximum" id="markdown-toc-what-are-the-network-connections-when-the-number-of-learned-patterns-reaches-maximum">What are the network connections when the number of learned patterns reaches maximum?</a>    <ul>
+      <li><a href="#dominant-weak-synapses" id="markdown-toc-dominant-weak-synapses">dominant weak synapses</a></li>
+      <li><a href="#reciprocal-connections-are-stronger" id="markdown-toc-reciprocal-connections-are-stronger">reciprocal connections are stronger</a></li>
+      <li><a href="#reciprocal-connections-in-sequence-hypothesis" id="markdown-toc-reciprocal-connections-in-sequence-hypothesis">reciprocal connections in sequence hypothesis</a></li>
+    </ul>
+  </li>
+  <li><a href="#take-home-message-and-discussion" id="markdown-toc-take-home-message-and-discussion">Take-home-message and discussion</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
+</ul>
+
+<p>Here is the <a href="http://hanlu.io/blog/is-brain-optimal-for-information-storage/">Original and Updated Notes</a>.</p>
+
+<h1 id="topic-of-interest">Topic of interest</h1>
+
+<p>Intuition: brain should be <strong>fully</strong> connected, for its highly condensed property and interaction of collaterals.</p>
+
+<p>Empirical evidence: brain is <strong>sparsely</strong> connected, with a connection probability of $10\%$ in neocortex.</p>
+
+<p>Question concerned: is the sparse connection an optimal setting (for information storage)?</p>
+
+<h1 id="two-hypotheses-of-information-storage-in-the-brain">Two hypotheses of information storage in the brain</h1>
+
+<h3 id="attractor-state-in-a-recurrent-network">attractor state in a recurrent network</h3>
+
+<p>A small group of neurons have higher firing rates compared to background activity.</p>
+
+<p>This is also a widely-accepted mechanism in feedback network (recurrent network).</p>
+
+<figure>
+  <p><img src="/assets/posts/is-brain-optimal-for-information-storage/memory-engram.png" alt="" /></p>
+  <figcaption>An illustration of memory engram. The memory of this context is stored by the blue colored neurons.</figcaption>
+</figure>
+
+<h3 id="firing-sequences-in-a-feedforward-network">firing sequences in a feedforward network</h3>
+<p>It is also confirmed that the signal could be stored in the network in the form of firing sequences of a few neurons in a feedforward network.</p>
+
+<figure>
+  <p><img src="/assets/posts/is-brain-optimal-for-information-storage/feedforward.png" alt="" /></p>
+  <figcaption>In a feedforward network, the neurons never project back.</figcaption>
+</figure>
+
+<p>The feedforward network could present (or save) information, because the neuron (or unit network) at different stage has different response time constant.</p>
+
+<figure>
+  <p><img src="/assets/posts/is-brain-optimal-for-information-storage/feed.png" alt="" /></p>
+  <figcaption>When receiving an input, the neurons at different stage have different time delay (and response amplitude). To maintain the same response level, the synaptic weight should increase with stage increases. </figcaption>
+</figure>
+
+<h1 id="motivation-from-models-to-connection-style">Motivation from models to connection style</h1>
+
+<p>Current numerical research usually starts from a specific connection pattern, It is unclear whether cortical connectivity obeys the rules postulated by these models.</p>
+
+<h3 id="learning-algorism">learning algorism</h3>
+<p>So current study started from a possibly fully connection state, using <strong>perceptron learning algorism</strong> to classify total inputs (determine outputs). Patterns to be learned determined the synaptic weights space.</p>
+
+<figure>
+  <p><img src="/assets/posts/is-brain-optimal-for-information-storage/perceptron.png" alt="" /></p>
+  <figcaption>In this illustration, the threshold ($T$) plus a robustness parameter $K$ determined the constrains to the newtrok.</figcaption>
+</figure>
+
+<h3 id="network-setting">network setting</h3>
+
+<p>simplified neuron model: binary ($S_j = 1$  is active, $S_j = 0$ is inactive)</p>
+
+<p>neuron type: excitatory neurons and inhibitory neurons.</p>
+
+<p>connections: Inhibitory neurons are fully connected and not touched during the learning process. Excitatory neurons are possibly fully connected.</p>
+
+<h3 id="learned-patterns-and-synaptic-weights">learned patterns and synaptic weights</h3>
+
+<p>In the current study, different firing patterns are randomly generated and presented to the network, and the network has to learn (or store) the pattern with sets of synaptic weights.</p>
+
+<figure>
+  <p><img src="/assets/posts/is-brain-optimal-for-information-storage/pattern.png" alt="" /></p>
+  <figcaption>In this example, a network of four neurons has to learn the pattern '1010'. So the connections between neuron $1$ and neuron $3$ is higher, with larger diameter of the circle.</figcaption>
+</figure>
+
+<h3 id="synaptic-integration-and-perceptron-classification">synaptic integration and perceptron classification</h3>
+
+<p>Neurons are connected with different strength, $w_{ij}$ is the synaptic weight from neuron $j$ to neuron $i$.</p>
+
+<p>The synaptic inputs to each neuron is summed and compared to a threshold $T$.</p>
+
+<script type="math/tex; mode=display">\sum_\mathrm{1,...,N}w_{ij}S_j(t),</script>
+
+<p>where $S_j$ is the activity of input neuron and $w_{ij}$ is the corresponding weight.</p>
+
+<p>If $\sum_\mathrm{1,…,N}w_{ij}S_j(t)&gt;T+K$, fire;</p>
+
+<p>if $\sum_\mathrm{1,…,N}w_{ij}S_j(t)&lt;T-K$, silence.</p>
+
+<h1 id="what-are-the-network-connections-when-the-number-of-learned-patterns-reaches-maximum">What are the network connections when the number of learned patterns reaches maximum?</h1>
+
+<h3 id="dominant-weak-synapses">dominant weak synapses</h3>
+
+<p>In the synaptic weight distribution, there are more weak synapses and less strong synapses, which also fits the experimental evidence. (Simulation results absed on attractor state hypothesis.)</p>
+
+<figure>
+  <p><img src="/assets/posts/is-brain-optimal-for-information-storage/weight-distribution.png" alt="" /></p>
+  <figcaption>In $c$, EPSP amplitude is an representation of synaptic weight.</figcaption>
+</figure>
+
+<h3 id="reciprocal-connections-are-stronger">reciprocal connections are stronger</h3>
+
+<p>The stronger connections are reciprocal connections. The probability of reciprocal connections are above the square of connection probability. (Simulation results absed on attractor state hypothesis.)</p>
+
+<figure>
+  <p><img src="/assets/posts/is-brain-optimal-for-information-storage/reciprocal-connections.png" alt="" /></p>
+  <figcaption>In $d$, EPSP amplitude is an representation of synaptic weight.</figcaption>
+</figure>
+
+<h3 id="reciprocal-connections-in-sequence-hypothesis">reciprocal connections in sequence hypothesis</h3>
+<p>The same phenomenon of higher reciprocal connection probability was also observed when simulating the sequence hypothesis of information storage. But the probability equals to the squared probability of connection probability.</p>
+
+<figure>
+  <p><img src="/assets/posts/is-brain-optimal-for-information-storage/sequence-bi.png" alt="" /></p>
+  <figcaption>All black lines: results of attractor state simulation. Orange line: results of sequence simulation.</figcaption>
+</figure>
+
+<h1 id="take-home-message-and-discussion">Take-home-message and discussion</h1>
+
+<p><strong>Conclusion</strong>  The sparely connected network with stronger reciprocal connections make the brain efficient for information storage.</p>
+
+<p><strong>Discussion</strong></p>
+
+<p>How to realize the function of memory in ANN?</p>
+
+<p>Use tempotron learning algorism?</p>
+<figure>
+  <p><img src="/assets/posts/is-brain-optimal-for-information-storage/tempotron.png" alt="" /></p>
+</figure>
+
+<p>The function of “potential” (zero) synapses.</p>
+
+<h1 id="references">References</h1>
+<p><a href="http://images.google.de/imgres?imgurl=https%3A%2F%2Fmopapersmoproblems.files.wordpress.com%2F2013%2F08%2Fthingaboutredplace.png&amp;imgrefurl=https%3A%2F%2Fmopapersmoproblems.wordpress.com%2Fcategory%2Fspecial-blog-post%2F&amp;h=899&amp;w=1446&amp;tbnid=Pvf3VgLxOqfw9M%3A&amp;docid=8xz2O0-5qrXhKM&amp;ei=pwkVWKraBYLxUoPhh8gJ&amp;tbm=isch&amp;iact=rc&amp;uact=3&amp;dur=331&amp;page=1&amp;start=18&amp;ndsp=27&amp;ved=0ahUKEwjqyaeU8IDQAhWCuBQKHYPwAZkQMwg-KBowGg&amp;bih=654&amp;biw=1517">picture of memory engram is modified from this one</a></p>
+
+<p><a href="http://www.sciencedirect.com/science/article/pii/S0896627308010830">Goldman MS. Memory without feedback in a neural network. Neuron. 2009 Feb 26;61(4):621-34.</a></p>
+
+<p><a href="http://www.nature.com/neuro/journal/v9/n3/full/nn1643.html">Gütig R, Sompolinsky H. The tempotron: a neuron that learns spike timing–based decisions. Nature neuroscience. 2006 Mar 1;9(3):420-8.</a></p>
+
+<p><a href="http://utmemoryclub.com/wp-content/uploads/2013/07/brunel2016.pdf">Brunel N. Is cortical connectivity optimized for storing information [quest]. Nature neuroscience. 2016 Apr 11.</a></p>
+
+
+
+
+<span style="display:block;text-align:center;margin-top:5em;"><button class="js-gitter-toggle-chat-button btn"><i class="fa fa-comments" aria-hidden="true"></i> Toggle Chat </button></span>
+
+
+<div class="explore">
+    <div class="explore__devider">*****</div>
+    <div class="explore__label">Explore other reading clubs</div>
+    <ul class="categories">
+            <li class="categories__item"><a href="https://github.com/neuronstar/spiking-neuron-models">Spiking Neuron Models</a></li>
+		<li class="categories__item"><a href="/related-clubs.html">All</a></li>
+    </ul>
+</div>
+
+
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'reading-club/Lobby',
+    activationElement: false
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+        </div>
+
+        <script src="/assets/vendor/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+        
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-81870366-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    </body>
+</html>

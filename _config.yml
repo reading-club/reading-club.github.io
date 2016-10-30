@@ -11,6 +11,7 @@ author:
   googleplus:
   github: reading-club
   twitter:
+  contact: https://github.com/reading-club/reading-club.github.io/issues/new
   # disqus: your_disqus_forum_shortname
 
 google_analytics: 'UA-81870366-1'
@@ -21,14 +22,14 @@ google_analytics: 'UA-81870366-1'
 collections:
   clubs:
     output: true
-  rotations:
+  5weekplus:
     output: true
 
 
 defaults:
   - scope:
       path: ""
-      type: rotations
+      type: 5weekplus
     values:
       gitter: reading-club/Lobby
 

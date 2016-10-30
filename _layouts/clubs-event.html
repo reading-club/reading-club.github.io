@@ -1,0 +1,48 @@
+---
+layout: default
+---
+{% include page/title.html %}
+
+{% if page.schedule %}
+<!-- <div style="text-align: center;border: 1px solid #000;padding: 1em;">
+<span style="display:block;">Schedule: {{ page.schedule }} </span>
+</div> -->
+{% endif %}
+
+<div style="border-top: 1px solid #000;border-bottom: 1px solid #000;padding: 1em;">
+<div class="post-teaser" style="margin-bottom: 0.5em !important;">
+        <div class="post-teaser__infoblock">
+        <span class="post-teaser__schedule">
+				<i class="fa fa-calendar-o" aria-hidden="true"></i> Date: {{ page.schedule }}</span>
+        <br>
+        <span class="post-teaser__speaker"><i class="fa fa-user" aria-hidden="true"></i> Speaker: {{ page.speaker }}</span>
+        <br>
+        <span class="post-teaser__references"><i class="fa fa-paperclip" aria-hidden="true"></i> References: </span><br>
+        {% for item in page.ref %}
+        <span class="post-teaser__reflist"><a href="{{ item }}">{{ item }}</a></span>
+        {% endfor %}
+        </div>
+    
+</div>
+</div>
+
+
+
+{{ content }}
+
+
+{% if page.gitter %}
+<span style="display:block;text-align:center;margin-top:5em;"><button class="js-gitter-toggle-chat-button btn"><i class="fa fa-comments" aria-hidden="true"></i> Toggle Chat </button></span>
+{% endif %}
+
+{% include page/relclubs.html %}
+
+
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: '{{ page.gitter }}',
+    activationElement: false
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>

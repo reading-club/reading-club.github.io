@@ -4,7 +4,8 @@
 body {
   font-family: "Inconsolata";
   color: #333333;
-  background-color: #F5F5F5; }
+  background-color: #FFF;
+  /*$dorian;*/ }
 
 li {
   margin-top: 0.5em;

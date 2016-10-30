@@ -13,6 +13,11 @@
     </div>
 
     <ul class="social-links">
+        {% if site.author.contact %}
+        <a href="{{ site.author.contact }}" class="social-links__entry" target="_blank">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            </a>
+        {% endif %}
         {% if site.author.github %}
             <a href="https://github.com/{{ site.author.github }}" class="social-links__entry" target="_blank">
                 <i class="fa fa-github"></i>

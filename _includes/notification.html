@@ -1,0 +1,28 @@
+<!-- Use a button to open the snackbar -->
+<button onclick="notifyThem()" id="snackbar--button"><i class="fa fa-bell-o" aria-hidden="true"></i></button>
+
+<!-- The actual snackbar -->
+<div id="snackbar">
+    <span class="title-notification--box">Upcoming Event</span>
+{% assign noti = site.data.notifications |  where:"event","system" %}
+<p><a style="color: white;" href="{{ noti[0].link }}">{{ noti[0].upcoming }}</a></p>
+<p>{{ noti[0].schedule }}</p>
+
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        notifyThem();
+    });
+
+    function notifyThem() {
+    // Get the snackbar DIV
+    var x = document.getElementById("snackbar")
+
+    // Add the "show" class to DIV
+    x.className = "show";
+
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 10000);
+}
+</script>
