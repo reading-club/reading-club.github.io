@@ -90,7 +90,7 @@ hr.paragraph:after {
 .notes--info,.notes--success,.notes--warning,.notes--error {
     padding:20px;margin:10px 0
 }
-.notes--info:before,.notes--success:before,.notes--warning:before,.notes--error:before { 
+.notes--info:before,.notes--success:before,.notes--warning:before,.notes--error:before {
     font-family:FontAwesome;
     font-style:normal;
     font-weight:400;
@@ -156,7 +156,7 @@ hr.paragraph:after {
 #snackbar.show {
     visibility: visible; /* Show the snackbar */
 
-/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar.
 However, delay the fade out process for 2.5 seconds */
     -webkit-animation: fadein 0.1s;
     animation: fadein 0.1s;
@@ -164,7 +164,7 @@ However, delay the fade out process for 2.5 seconds */
 
 /* Animations to fade the snackbar in and out */
 @-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;} 
+    from {bottom: 0; opacity: 0;}
     to {bottom: 30px; opacity: 1;}
 }
 
@@ -174,7 +174,7 @@ However, delay the fade out process for 2.5 seconds */
 }
 
 @-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;} 
+    from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
 }
 
@@ -221,11 +221,15 @@ ol {
     list-style-type: decimal !important;
     padding-left: 2em;
     padding-bottom: 1em;
+    font-size: 20px !important;
+    line-height: 32px !important;
 }
 ul {
     list-style-type: square;
     padding-left: 2em;
     padding-bottom: 1em;
+    font-size: 20px !important;
+    line-height: 32px !important; 
 }
 ul>li>ul {
     list-style-type: disc;
@@ -240,7 +244,7 @@ em {
 
 figure {
     margin-top: 2em;
-    margin-bottom: 2em; 
+    margin-bottom: 2em;
 }
 figure > figcaption {
     padding: 0.5em 1em 0.75em 1em;
