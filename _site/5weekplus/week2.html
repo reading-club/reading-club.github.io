@@ -194,7 +194,143 @@
 
 
 
+<h2 id="background">Background</h2>
 
+<p>Why are we interested in networks? Because a enormous categories of phenomena can be models using networks. Internet, society, physics, biology, ecology, economy, even the evolution of the universe.</p>
+
+<h3 id="concepts">Concepts</h3>
+
+<ul>
+  <li>Degrees</li>
+</ul>
+
+<figure>
+  <p><img src="/assets/posts/popularity-similarity-in-networks/directed-degrees.svg.png" alt="" /></p>
+  <figcaption>
+    <p>Degrees. Source <a href="https://en.wikipedia.org/wiki/File:DirectedDegrees.svg">wikipedia</a>.</p>
+  </figcaption>
+</figure>
+
+<h3 id="scaling-in-networks">Scaling in Networks</h3>
+
+<p>People have found a lot of scaling phenomena in networks.</p>
+
+<ul>
+  <li>Internet links (directed links):</li>
+</ul>
+
+<p><a href="https://arxiv.org/abs/cond-mat/0008465">arXiv:cond-mat/0008465</a> for the scaling in internet links. What they find is that the distribution of degrees is power-law, i.e., $P\propto k^{-\gamma}$ with $\gamma\sim 2$. <a href="https://arxiv.org/abs/cond-mat/0009090v1">arXiv:cond-mat/0009090</a> provides a better explanation. The explanation is simply popular is more attractive.</p>
+
+<ul>
+  <li>Barabasi et al found that in random networks, scaling appears also <sup id="fnref:2"><a href="#fn:2" class="footnote">1</a></sup>.</li>
+</ul>
+
+<figure>
+  <p><img src="/assets/posts/popularity-similarity-in-networks/barabasi-scaling-random-networks.png" alt="" /></p>
+  <figcaption>
+    <p>Scaling of connectivities. Barabasi (1999).</p>
+  </figcaption>
+</figure>
+
+<ul>
+  <li>And some theories like <sup id="fnref:3"><a href="#fn:3" class="footnote">2</a></sup>, etc.</li>
+</ul>
+
+<h3 id="popularity">Popularity</h3>
+
+<p>In the example of internet links, popular is attractive can be models by a dynamic generation of network following some rules.</p>
+
+<ol>
+  <li>At each step we have $m$ links distributed.</li>
+  <li>
+    <p>The probability of attaching to some node with degree $k_i$ is</p>
+
+    <script type="math/tex; mode=display">P_i \sim  k_i + A</script>
+
+    <p>where $A$ serves as a initial attractiveness since it tells us the probability of attachment when the degree $k_i=0$.</p>
+  </li>
+</ol>
+
+<p>Dorogovtsev et al  proved that this model gives us the final distribution of degrees</p>
+
+<script type="math/tex; mode=display">P \propto k^{-\gamma},</script>
+
+<p>where $\gamma=2 + A/m$ <sup id="fnref:1"><a href="#fn:1" class="footnote">3</a></sup>.</p>
+
+<h3 id="similarity">Similarity</h3>
+
+<p>The problem about popularity is that we are all aware that popularity is not the only factor.</p>
+
+<p>Consider the following examples.</p>
+
+<ol>
+  <li>You write a blog about neuroscience. In the past people usually put links on the blog, which is called blogroll or something. In the links, what you would include is something like facebook, google, maybe nature/science, and most likely some blogs or resources about neuroscience eventhough these websites may not be very popular. However, these links have similar contents as yours.</li>
+  <li>We could also check the link you used in your articles and they are very likely to point to some websites that is also neuroscience.</li>
+</ol>
+
+<p>In some cases similar is also important.</p>
+
+<h2 id="popularity-and-similarity-together">Popularity and Similarity Together</h2>
+
+<p>What we would expect is that larger popularity and small similarity (more similar) are the preferable connections. Thus competitions between the two determines the overall connection probability.</p>
+
+<p>To combine the two factors, we use the metric $\mathrm{Popularity}\times \mathrm{Similarity}$. Even though there is a competition between popularity and similarity, small values of $\mathrm{Popularity}\times \mathrm{Similarity}$ are more preferable connections, which takes similarity more seriously.</p>
+
+<p>A simple model to demonstrate this is to build a space of disc. The radius is time $t$, while angles are the measure of similarity. A smaller angler distance indicates a smaller similarity. Using this mapping, we are able to show the dynamics of networks, since we can tell the history of the nodes.</p>
+
+<p>Mathematically speaking, the similarity is measured as</p>
+
+<script type="math/tex; mode=display">\begin{equation}
+\theta_{ij} = \lvert \theta_i - \theta_j \rvert.
+\end{equation}</script>
+
+<p>while time is the radius with $t=0$ at the center of the disc.</p>
+
+<figure>
+  <p><img src="/assets/posts/popularity-similarity-in-networks/disc-of-similarity.png" alt="" /></p>
+  <figcaption>
+    <p>Disc of similarity. This figures shows the measure of similarity. 2 &amp; 3 are more similar, given the fact that their angular distance $\lvert\theta_2-\theta_3\rvert$ is smaller that either $\theta_2-\theta_1$ or $\lvert\theta_3-\theta_1\rvert$. Papadopoulos et al (2012).</p>
+  </figcaption>
+</figure>
+
+<p>Now we are going to dynamically generate a network. The updating rules are listed bellow.</p>
+
+<ol>
+  <li>We create a node at each time step and label them with numbers. For example, node 3 means it was created at time step 3. We denote the time of the $i$th node as $t_i$ and its angle on the disc as $\theta_i$.</li>
+  <li>As the node $i$ is created at time $t_i$, it is connected to $m$ previous nodes.</li>
+  <li>The node $i$ is connected to node $j$’s if $t_j\theta_{ij}$ are the smallest. In this measure $t_j$ is the popularity of node $j$ and $\theta_{ij}$ is the similarity of the two nodes.</li>
+</ol>
+
+<figure>
+  <p><img src="/assets/posts/popularity-similarity-in-networks/disc-popularity-similarity.png" alt="" /></p>
+  <figcaption>
+    <p>Illustration of the disc model. The radial coordinate measure the creation time of the node, while the angular distance measures the similarity.</p>
+  </figcaption>
+</figure>
+
+<p><strong>The key transformation of this problem</strong> is to define a new radial coordinate system $r =\ln t$, so that the distance becomes log scale. Then we define the disc to be on a hyperbolic space so that the distance between any two points is calculated as</p>
+
+<script type="math/tex; mode=display">x_{ij} = r_i + r_j + \ln (\theta_{ij}/2) = \ln(t_i t_j \theta_{ij}/2).</script>
+
+<p>Minimizing $x_{ij}$ becomes equivalent to minimizing $t_j \theta_{ij}/2$ when dealing with the connectivity from a new born node $i$. <strong>The competition between popularity and similarity is simply the minimization of distance between two nodes on a hyperbolic plane.</strong></p>
+
+<p>Why is this definition of distance superior than the previous measure of $\mathrm{Popularity}\times \mathrm{Similarity}$? Because the universe/nature itself measures distance on hyperbolic space, i.e., Minkowski space.</p>
+
+<h2 id="references-and-notes">References and Notes</h2>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:2">
+      <p>Barabási, A.-L., &amp; Albert, R. (1999). <a href="http://doi.org/10.1126/science.286.5439.509">Emergence of Scaling in Random Networks. Science, 286(5439), 509–512.</a> <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>Krapivsky, P. L., Redner, S., &amp; Leyvraz, F. (2000). <a href="http://doi.org/10.1103/PhysRevLett.85.4629">Connectivity of growing random networks. Physical Review Letters, 85(21), 4629–4632.</a> <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:1">
+      <p><a href="https://arxiv.org/abs/cond-mat/0009090v1">arXiv:cond-mat/0009090</a>. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 
 
