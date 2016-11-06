@@ -255,9 +255,9 @@ figure {
 figure > figcaption {
     padding: 0.5em 1em 0.75em 1em;
     color: #808080;
-    border-left: 5px solid #c7c7c7;
-    border-right: 5px solid #c7c7c7;
-    background: #e8e8e8;
+    border-left: 5px solid #e7e7e7;
+    border-right: 5px solid #e7e7e7;
+    background: #f8f8f8;
     margin: -1em 0em 1em 0em;
     font-size: 90%;
 }
