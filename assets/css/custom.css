@@ -202,6 +202,9 @@ However, delay the fade out process for 2.5 seconds */
     overflow-y: hidden;
     text-overflow: ellipsis;
 }
+#markdown-toc::-webkit-scrollbar { 
+    display: none; 
+}
 #markdown-toc>li {
     list-style: square;
 }
