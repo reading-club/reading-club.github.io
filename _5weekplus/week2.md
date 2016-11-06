@@ -196,7 +196,7 @@ Boguna et al modeled the growth of internet AS using the popularity similarity m
 
 * Application to Cosmology
 
-Krioukov et al came up with the idea that the whole universe can be mapped onto hyperbolic space and events are connected only to nearest neighbors. This in fact is already true in cosmology. Theories predicted that the matter density after inflation is power law, which can be explained by a dynamics generating of particle on a hyperbolic space. The authors created a map from the physical de Sitter space to hyperbolic space. Then the dynamic generation of the particles in the universe simple follows power law since the nodes generated this way has a power law distribution of degrees, i.e., a place that is dense initially is more likely to be dense after the inflation.
+Krioukov et al came up with the idea that the whole universe can be mapped onto hyperbolic space and events are connected only to nearest neighbors. This in fact is already true in cosmology. Theories predicted that the matter density after inflation is power law, which can be explained by a dynamics generating of particle on a hyperbolic space. The authors created a map from the physical de Sitter space to hyperbolic space. Then the dynamic generation of the particles in the universe simple follows power law since the nodes generated this way has a power law distribution of degrees, i.e., a place that is dense initially is more likely to be dense after the inflation [^5].
 
 
 <figure markdown="1">
