@@ -138,7 +138,7 @@ Minimizing $x_{ij}$ becomes equivalent to minimizing $t_j \theta_{ij}/2$ when de
 <figure markdown="1">
 ![]({{ site.baseurl }}/assets/posts/popularity-similarity-in-networks/disc-similarity-popularity-hyperbolic.png)
 <figcaption markdown="1">
-Illustration of the disc model. The radial coordinate measure the creation time of the node, while the angular distance measures the similarity. The shaded region is the a region enclosed by a equal distance line.
+Illustration of the disc model. The radial coordinate measure the creation time of the node, while the angular distance measures the similarity. The shaded region is the a region enclosed by a equal distance line. Papadopoulos et al (2012).
 </figcaption>
 </figure>
 

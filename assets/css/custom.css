@@ -29,6 +29,9 @@ a:visited {
 .post-teaser__reflist:before {
     content: "\00a0-\00a0"
 }
+.post-teaser__reflist>a {
+    word-wrap: break-word;
+}
 .post-teaser__status {
 
 }
@@ -152,6 +155,15 @@ hr.paragraph:after {
     bottom: 30px; /* 30px from the bottom */
 }
 
+@media only screen and (max-width: 500px) {
+    #snackbar {
+    min-width: 250px; /* Set a default minimum width */
+    max-width: 350px;
+    font-size: 80%;
+    }
+}
+
+
 /* Show the snackbar when clicking on a button (class added with JavaScript) */
 #snackbar.show {
     visibility: visible; /* Show the snackbar */
@@ -189,7 +201,6 @@ However, delay the fade out process for 2.5 seconds */
     border-width: thin;
     border-color: #9C9C9C;
     padding: 1em 1em 1em 2em;
-    white-space: nowrap;
     display: inline-block;
     float: right;
     border-left: 1px solid #ccc;
@@ -205,6 +216,13 @@ However, delay the fade out process for 2.5 seconds */
 #markdown-toc::-webkit-scrollbar { 
     display: none; 
 }
+
+@media only screen and (max-width: 800px) {
+    #markdown-toc {
+    max-width: 100%;
+    }
+}
+
 #markdown-toc>li {
     list-style: square;
 }
@@ -227,16 +245,27 @@ ol {
     list-style-type: decimal !important;
     padding-left: 2em;
     padding-bottom: 1em;
-    font-size: 20px !important;
-    line-height: 32px !important;
+    font-size: /*inherit !important; */ 20px !important;
+    line-height: /*inherit;*/ 32px !important;
 }
 ul {
     list-style-type: square;
     padding-left: 2em;
     padding-bottom: 1em;
-    font-size: 20px !important;
-    line-height: 32px !important;
+    font-size: /*inherit !important;*/ 20px !important;
+    line-height: /*inherit;*/  32px !important;
 }
+@media only screen and (max-width: 800px) {
+    ol {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    }
+    ul {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    }
+}
+
 ul>li>ul {
     list-style-type: disc;
 }
