@@ -196,15 +196,18 @@ However, delay the fade out process for 2.5 seconds */
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
     color: #9C9C9C;
-    max-width: 30%;
+    max-width: 40%;
     word-wrap: break-word;
-    overflow: hidden;
+    overflow: auto;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
 }
 #markdown-toc>li {
     list-style: square;
 }
 #markdown-toc>li>ul {
     padding-left: 1em;
+    padding-bottom: 0em !important;
 }
 #markdown-toc>li>ul>li {
     list-style: disc;
@@ -229,7 +232,7 @@ ul {
     padding-left: 2em;
     padding-bottom: 1em;
     font-size: 20px !important;
-    line-height: 32px !important; 
+    line-height: 32px !important;
 }
 ul>li>ul {
     list-style-type: disc;
