@@ -15,7 +15,7 @@ ref:
 ## Background
 
 
-Why are we interested in networks? Because a enormous categories of phenomena can be modeled using networks. Internet, society, physics, biology, ecology, economy, even the evolution of the universe.
+Why are we interested in networks? Because a enormous categories of phenomena can be modeled using networks. Internet, society, physics, biology, ecology, economy, even the evolution of the universe are essentially networks.
 
 
 ### Concepts
