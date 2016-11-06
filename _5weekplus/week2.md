@@ -54,7 +54,7 @@ Scaling of connectivities. Barabasi (1999).
 ### Popularity
 
 
-In the example of internet links, popular is attractive can be models by a dynamic generation of network following some rules.
+In the example of internet links, popular is attractive can be modeled by a dynamic generation of network following some rules.
 
 1. At each step we have $m$ links distributed.
 2. The probability of attaching to some node with degree $k_i$ is
