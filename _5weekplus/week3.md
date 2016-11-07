@@ -26,6 +26,11 @@ Although humans have been reading for several thousand years and studying readin
 Reading development could be considered as a complex system across different levels in which other complex systems embedded.
 
 
+<figure markdown="1">
+![]({{ site.baseurl }}/assets/posts/Computing-the-Meanings-of-Words-in-Reading/BrainEnglish.jpg)
+</figure>
+
+
 Why it is important? The practical reasons is about how reading should be taught. See [wikipedia](https://en.wikipedia.org/wiki/Teaching_reading:_whole_language_and_phonics) for the Reading Wars.
 
 
@@ -40,19 +45,21 @@ There are many theories relating to development of word reading but fewer can be
 
 <figure markdown="1">
 ![]({{ site.baseurl }}/assets/posts/Computing-the-Meanings-of-Words-in-Reading/The-DRC-dual-route-cascaded-model-of-reading.png)
-</figure>
+</figure>  
 
 
 The DRC model is largely inspired by clinical observations. Based on the philosophy of symbolism, this model argues against connectionism for which artificial neural networks are important tools.
+
+
+Now look at this connectionism model: 
 
 
 <figure markdown="1">
 ![]({{ site.baseurl }}/assets/posts/Computing-the-Meanings-of-Words-in-Reading/The-triangle-model.jpeg)
 </figure>
 
+ The key point is that it assumes some general architecture, algorithm, or other principles in modeling reading development.
 
-reading is taught and  about how to balance unity and diversity of how 
-. The Reading Wars 
 
 1) reading development could be a prerequisite for good academic achievement and 2) there is a group of children who fail to develop typical reading skills. 
 
