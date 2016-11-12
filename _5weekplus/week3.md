@@ -64,8 +64,9 @@ Now look at this connectionist model:
  "Smith’s argument about the difﬁculties involved in using phonological mediation rests on the assumption that spelling-sound correspondences are **encoded by rules**. Connectionist models such as Seidenberg and McClelland’s (1989) subsequently provided an alternative in which the correspondences are **encoded by weights on connections between units** involved in the orthography-phonology mapping."
 
 
-Some issues: 1) Localist vs Distributed Representations: accessing vs computing;   
-             2) Attractor structures;
+Some issues:   
+  1) Localist vs Distributed Representations: accessing vs computing;   
+  2) Attractor structures;
 
 
 1) reading development could be a prerequisite for good academic achievement and 2) there is a group of children who fail to develop typical reading skills. 
