@@ -59,6 +59,8 @@ Now look at this connectionist model:
 </figure>
 
  The key point is that it assumes some general architecture, algorithm, or other principles in modeling reading development.
+ 
+ 
  "Smith’s argument about the difﬁculties involved in using phonological mediation rests on the assumption that spelling-sound correspondences are **encoded by rules**. Connectionist models such as Seidenberg and McClelland’s (1989) subsequently provided an alternative in which the correspondences are **encoded by weights on connections between units** involved in the orthography-phonology mapping."
 
 
