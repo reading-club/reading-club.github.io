@@ -66,7 +66,21 @@ Now look at this connectionist model:
 
 Some issues:   
   1) Localist vs Distributed Representations: accessing vs computing;   
-  2) Attractor structures;
+  2) Attractor structures: A network has an attractor basin when it develops stable points in activation space, and has the tendency to pull nearby points toward the stable attractor points. In this way, partial or degraded patterns of activity are driven towards more stable, familiar representations;
+  3) Supervised Learning;   
+  4) Catastrophic Interference: Training a simple feedforward network on one set of patterns followed by training the network on a second set of patterns resulted in unlearning of the ﬁrst set.    
+  
+  
+Model Details:   
+  1) Training corpus: 6,103 monosyllabic words;    
+  2) Semantic Representations: A total of 1,989 semantic features were generated from WordNet online semantic database to encode the 6,103 words;   
+  3) Phonological Representations: 25 phonological features x 8 phoneme slots = 200 units were used to encode the each CCCVCCCC word, with vowel centering to minimize the “dispersion” problem;   
+  4) Training: 
+
+
+<figure markdown="1">
+![]({{ site.baseurl }}/assets/posts/Computing-the-Meanings-of-Words-in-Reading/PHONOLOGY_SEMANTICS_TASKS.png)
+</figure>
 
 
 1) reading development could be a prerequisite for good academic achievement and 2) there is a group of children who fail to develop typical reading skills. 
