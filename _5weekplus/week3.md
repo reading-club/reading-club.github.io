@@ -15,6 +15,9 @@ ref:
 ## Background
 
 
+** “Essentially, all models are wrong, but some are useful.” ———— George E. P. Box **   
+
+
 Although humans have been reading for several thousand years and studying reading for more than a century, the mechanisms governing the acquisition, use and breakdown of this skill continue to be the subject of considerable interest and controversy...
 
 
