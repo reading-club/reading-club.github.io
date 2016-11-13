@@ -141,16 +141,16 @@ Now look at this connectionist model:
 
 
 <figure markdown="1">
-![]({{ site.baseurl }}/assets/posts/Computing-the-Meanings-of-Words-in-Reading/the_monolingual_model.png)
+![]({{ site.baseurl }}/assets/posts/Computing-the-Meanings-of-Words-in-Reading/the_monolingual_model.png?imageView/2/w/619/q/90)
 </figure>
   
 
 <figure markdown="1">
-![]({{ site.baseurl }}/assets/posts/Computing-the-Meanings-of-Words-in-Reading/the_bilingual_model.png)
+![]({{ site.baseurl }}/assets/posts/Computing-the-Meanings-of-Words-in-Reading/the_bilingual_model.png?imageView/2/w/619/q/90)
 </figure>
 
 
-## References
+## References   
 
 [^1]: Harm, M. W., & Seidenberg, M. S. (2004) Computing the Meanings of Words in Reading: Cooperative Division of Labor Between Visual and Phonological Processes. Psychological Review, 111(3), 662-720.  
 
