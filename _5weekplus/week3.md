@@ -67,7 +67,7 @@ Now look at this connectionist model:
  "Smith’s argument about the difﬁculties involved in using phonological mediation rests on the assumption that spelling-sound correspondences are **encoded by rules**. Connectionist models such as Seidenberg and McClelland’s (1989) subsequently provided an alternative in which the correspondences are **encoded by weights on connections between units** involved in the orthography-phonology mapping."
 
 
-Some issues:   
+Some Issues:   
   1) Localist vs Distributed Representations: accessing vs computing;   
   2) Attractor structures: A network has an attractor basin when it develops stable points in activation space, and has the tendency to pull nearby points toward the stable attractor points. In this way, partial or degraded patterns of activity are driven towards more stable, familiar representations;
   3) Supervised Learning;   
@@ -99,8 +99,40 @@ Model Details:
 </figure>
   
   
-  6) Orthographic Representations: 26 features corresponding to the letters of the alphabet X 10 slots = 260 units -> 111 units (slot-based localist)
+  6) Orthographic Representations: 26 features corresponding to the letters of the alphabet X 10 slots = 260 units -> 111 units (slot-based localist)    
   
+
+Division of Labor: 
+
+
+<figure markdown="1">
+![]({{ site.baseurl }}/assets/posts/Computing-the-Meanings-of-Words-in-Reading/units_over_time.png)
+</figure>
+
+
+<figure markdown="1">
+![]({{ site.baseurl }}/assets/posts/Computing-the-Meanings-of-Words-in-Reading/BOOT.png)
+</figure>
+
+
+<figure markdown="1">
+![]({{ site.baseurl }}/assets/posts/Computing-the-Meanings-of-Words-in-Reading/lesioning.png)
+</figure>
+
+
+<figure markdown="1">
+![]({{ site.baseurl }}/assets/posts/Computing-the-Meanings-of-Words-in-Reading/Accuracy_of_each_component.png)
+</figure>
+
+
+The Model’s Basic Properties:   
+  1) Activation of meaning from multiple sources;
+  2) Course of learning;
+  3) Precedence of phonological pathway in acquisition;
+  4) Development of the orth -> sem pathway;
+  5) Capacity of the orth -> sem pathway;
+  6) Co-operative computation of meaning.
+
 
 ## References
 
