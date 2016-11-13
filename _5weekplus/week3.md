@@ -156,7 +156,7 @@ Now look at this connectionist model:
 
 ## References
 
-[^1]: Harm, M. W., & Seidenberg, M. S. (2004) Computing the Meanings of Words in Reading: Cooperative Division of Labor Between Visual and Phonological Processes. Psychological Review, 111(3), 662-720.
-[^2]: Cortese, M. J., & Balota, D. A. (2012) Visual Word Recognition in Skilled Adult Readers. in The Cambridge Handbook of Psycholinguistics (pp.159-185).
-[^3]: Yang J., McCandliss B.D., Shu H., & Zevin, J. D. (2009) Simulating language-specific and language-general effects in a statistical learning model of Chinese reading. Journal of Memory and Language, 61(2), 238–257.
-[^4]: Yang, J., Shu, H., McCandliss, B. D., & Zevin, J. D. (2013) Orthographic influences on division of labor in learning to read Chinese and English: insights from computational modeling. Bilingualism: Language and Cognition, 16(2), 354–366.
+[^2]: Harm, M. W., & Seidenberg, M. S. (2004) Computing the Meanings of Words in Reading: Cooperative Division of Labor Between Visual and Phonological Processes. Psychological Review, 111(3), 662-720.
+[^3]: Cortese, M. J., & Balota, D. A. (2012) Visual Word Recognition in Skilled Adult Readers. in The Cambridge Handbook of Psycholinguistics (pp.159-185).
+[^4]: Yang J., McCandliss B.D., Shu H., & Zevin, J. D. (2009) Simulating language-specific and language-general effects in a statistical learning model of Chinese reading. Journal of Memory and Language, 61(2), 238–257.
+[^5]: Yang, J., Shu, H., McCandliss, B. D., & Zevin, J. D. (2013) Orthographic influences on division of labor in learning to read Chinese and English: insights from computational modeling. Bilingualism: Language and Cognition, 16(2), 354–366.
