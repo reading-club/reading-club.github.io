@@ -69,7 +69,7 @@ Now look at this connectionist model:
 
 ### **Some Issues**   
   1) Localist vs Distributed Representations: accessing vs computing;   
-  2) Attractor structures: A network has an attractor basin when it develops stable points in activation space, and has the tendency to pull nearby points toward the stable attractor points. In this way, partial or degraded patterns of activity are driven towards more stable, familiar representations;
+  2) Attractor structures: A network has an attractor basin when it develops stable points in activation space, and has the tendency to pull nearby points toward the stable attractor points. In this way, partial or degraded patterns of activity are driven towards more stable, familiar representations;     
   3) Supervised Learning;   
   4) Catastrophic Interference: Training a simple feedforward network on one set of patterns followed by training the network on a second set of patterns resulted in unlearning of the ﬁrst set.    
   
