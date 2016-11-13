@@ -136,23 +136,30 @@ Now look at this connectionist model:
 
 ## What's more?
 
+  1) No Panacea! Every model has its own advantage and disadvantage and none can explain everything of reading behavior.    
+  2) Modeling Chinese and bilingual:
 
+
+<figure markdown="1">
+![]({{ site.baseurl }}/assets/posts/Computing-the-Meanings-of-Words-in-Reading/the_monolingual_model.png)
+</figure>
+  
+
+<figure markdown="1">
+![]({{ site.baseurl }}/assets/posts/Computing-the-Meanings-of-Words-in-Reading/the_bilingual_model.png)
+</figure>
 
 
 ## References
 
-[^1]: Harm, M. W., & Seidenberg, M. S. (2004) Computing the Meanings of Words in Reading: Cooperative Division of Labor Between Visual and Phonological Processes. Psychological Review, Vol 111(3), 662-720.
+[^1]: Harm, M. W., & Seidenberg, M. S. (2004) Computing the Meanings of Words in Reading: Cooperative Division of Labor Between Visual and Phonological Processes. Psychological Review, 111(3), 662-720.  
 
 
+[^2]: Cortese, M. J., & Balota, D. A. (2012) Visual Word Recognition in Skilled Adult Readers. in The Cambridge Handbook of Psycholinguistics (pp.159-185).
 
 
-[^2]: Parrila, R. K., & McQuarrie, L. M. (2014) Cognitive Processes and Academic Achievement: Multiple Systems Model of Reading. in Cognition, Intelligence, and Achievement: A Tribute to J. P. Das.
+[^3]: Yang J., McCandliss B.D., Shu H., & Zevin, J. D. (2009) Simulating language-specific and language-general effects in a statistical learning model of Chinese reading. Journal of Memory and Language. 2009;61(2), 238–257.
 
-Papadopoulos, T., & Parrila, R. (2014). 
 
-[arXiv:cond-mat/0009090](https://arxiv.org/abs/cond-mat/0009090v1).
-[^2]: Barabási, A.-L., & Albert, R. (1999). [Emergence of Scaling in Random Networks. Science, 286(5439), 509–512.](http://doi.org/10.1126/science.286.5439.509)
-[^3]: Krapivsky, P. L., Redner, S., & Leyvraz, F. (2000). [Connectivity of growing random networks. Physical Review Letters, 85(21), 4629–4632.](http://doi.org/10.1103/PhysRevLett.85.4629)
-[^4]: This express is specific for curvature $K=-4$. However, the final result of scaling doesn't dependent on the curvature itself.
-[^5]: Krioukov, D., Kitsak, M., Sinkovits, R. S., Rideout, D., Meyer, D., & Boguñá, M. (2012). [Network Cosmology. Scientific Reports, 2, 793.](http://doi.org/10.1038/srep00793)
-[^6]: Boguñá, M., Papadopoulos, F., & Krioukov, D. (2010). [Sustaining the Internet with hyperbolic mapping. Nature Communications, 1(6), 1–8.](http://doi.org/10.1038/ncomms1063)
+[^4]: Yang, J., Shu, H., McCandliss, B. D., & Zevin, J. D. (2013) Orthographic influences on division of labor in learning to read Chinese and English: insights from computational modeling. Bilingualism: Language and Cognition, 16(2), 354–366.
+
