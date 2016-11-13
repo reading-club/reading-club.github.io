@@ -141,12 +141,12 @@ Now look at this connectionist model:
 
 
 <figure markdown="1">
-![]({{ site.baseurl }}/assets/posts/Computing-the-Meanings-of-Words-in-Reading/the_monolingual_model.png?imageView/2/w/619/q/90)
+![]({{ site.baseurl }}/assets/posts/Computing-the-Meanings-of-Words-in-Reading/the_monolingual_model.png?imageView/2/w/619/q/40)
 </figure>
   
 
 <figure markdown="1">
-![]({{ site.baseurl }}/assets/posts/Computing-the-Meanings-of-Words-in-Reading/the_bilingual_model.png?imageView/2/w/619/q/90)
+![]({{ site.baseurl }}/assets/posts/Computing-the-Meanings-of-Words-in-Reading/the_bilingual_model.png?imageView/2/w/619/q/40)
 </figure>
 
 
