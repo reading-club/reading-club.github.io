@@ -72,10 +72,15 @@ Some issues:
   
   
 Model Details:   
-  1) Training corpus: 6,103 monosyllabic words;    
+  1) Training Corpus: 6,103 monosyllabic words;    
   2) Semantic Representations: A total of 1,989 semantic features were generated from WordNet online semantic database to encode the 6,103 words;   
   3) Phonological Representations: 25 phonological features x 8 phoneme slots = 200 units were used to encode the each CCCVCCCC word, with vowel centering to minimize the “dispersion” problem;   
-  4) Training: 
+  4) The Phonology-Semantics Model:    
+
+
+<figure markdown="1">
+![]({{ site.baseurl }}/assets/posts/Computing-the-Meanings-of-Words-in-Reading/PHONOLOGY_SEMANTICS.png)
+</figure>
 
 
 <figure markdown="1">
@@ -83,11 +88,16 @@ Model Details:
 </figure>
 
 
-1) reading development could be a prerequisite for good academic achievement and 2) there is a group of children who fail to develop typical reading skills. 
-
-Reading is one of human higher cognitive functions 
-Although learning to read seems effortless for most of us, it is still far from fully understanding the nature of reading. Like other human higher cognitive functions, the picutre of reading development mechanism is so complex there is .
-
+  5) The Reading Model:    
+  
+  
+<figure markdown="1">
+![]({{ site.baseurl }}/assets/posts/Computing-the-Meanings-of-Words-in-Reading/The_implemented_reading_model.png)
+</figure>
+  
+  
+  6) Orthographic Representations: 26 features corresponding to the letters of the alphabet X 10 slots = 260 units -> 111 units (slot-based localist)
+  
 
 ## References
 
