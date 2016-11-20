@@ -1,10 +1,10 @@
 - event: system
-  upcoming: "Flexible frequency control of cortical oscillations enables computations required for working memory"
-  schedule: "2016-11-20 22:30:00, GMT+8"
-  link: /5weekplus/week4.html
+  upcoming: "Playing Atari with Deep Reinforcement Learning"
+  schedule: "2016-11-27 22:30:00, GMT+8"
+  link: /5weekplus/week5.html
 
 - event: 5-week-plus
-  upcoming: "Flexible frequency control of cortical oscillations enables computations required for working memory"
-  schedule: "2016-11-20 22:30:00, GMT+8"
+  upcoming: "Playing Atari with Deep Reinforcement Learning"
+  schedule: "2016-11-27 22:30:00, GMT+8"
   timezone: http://time.is/2230_6_Nov_2016_in_Beijing/Ireland/Denver/Berlin?Reading_Club
-  link: /5weekplus/week4.html
+  link: /5weekplus/week5.html
