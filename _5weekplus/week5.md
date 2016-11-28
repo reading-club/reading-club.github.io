@@ -19,7 +19,7 @@ Could AI learn to control itself with the raw input from the environment, rather
 Future reward and its Bellman's expression:
 $$
 \begin{equation}
-R_{t}=\sum_{{t}'=t}^{T }\gamma ^{{t'}-t}r_{{t}'}=r+\gamma R_{t^{'}}
+R_{t}=\sum_{ {t}'=t}^{T }\gamma ^{ {t'}-t}r_{ {t}'}=r+\gamma R_{t^{'} }
 \end{equation}
 $$
 
@@ -35,13 +35,13 @@ This means the maximum expected return achievable, after seeing some sequence $s
 The $Q^{*}(s,a)$ could be expressed using Bellman’s equation:
 $$
 \begin{equation}
-Q^{*}(s,a)=\mathbb{E}_{s^{'}\sim  \varepsilon }[r+\gamma max_{{a}'}Q^{*}({s}',{a}')|s,a]
+Q^{*}(s,a)=\mathbb{E}_{s^{'}\sim  \varepsilon }[r+\gamma max_{ {a}'}Q^{*}({s}',{a}')|s,a]
 \end{equation}
 $$ 
 However, $Q^{*}(s,a)$ is an optimal value. Normally, people use using the Bellman equation 
 $$
 \begin{equation}
-Q_{i+1}(s,a)=\mathbb{E}[r+\gamma max_{{a}'}Q_{i}({s}',{a}')|s,a]
+Q_{i+1}(s,a)=\mathbb{E}[r+\gamma max_{ {a}'}Q_{i}({s}',{a}')|s,a]
 \end{equation}
 $$
 as an iterative update to converge to the optimal action-value function, when $Q_{i}\rightarrow Q^{*} $ as $i \rightarrow \infty $.
@@ -53,7 +53,7 @@ $$
 L_{i}(\theta_{i})=\mathbb{E}_{s,a\sim  \rho (\cdot)}[(y_{i}-Q(s,a;\theta_{i}))^{2}]
 \end{equation}
 $$
-, where $y_{i}=\mathbb{E}_{{s}'\sim \varepsilon }[r+\gamma max_{{a}'}Q_{i}({s}',{a}';\theta_{i-1})|s,a]$ and $rho(s,a)$ is a probability distribution over sequences $s$ and actions $a$.
+, where $y_{i}=\mathbb{E}_{ {s}'\sim \varepsilon }[r+\gamma max_{ {a}'}Q_{i}({s}',{a}';\theta_{i-1})|s,a]$ and $rho(s,a)$ is a probability distribution over sequences $s$ and actions $a$.
 
 ### $\epsilon $-greedy 
 The next action is selected using $\epsilon $-greedy strategy.
