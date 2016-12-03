@@ -153,7 +153,7 @@ hr.paragraph:after {
     position: fixed; /* Sit on top of the screen */
     z-index: 1; /* Add a z-index if needed */
     right: 1em; /* Center the snackbar */
-    bottom: 30px; /* 30px from the bottom */
+    bottom: 15px; /* 30px from the bottom */
 }
 
 @media only screen and (max-width: 600px) {
