@@ -176,10 +176,11 @@
 
 <!-- The actual snackbar -->
 <div id="snackbar">
+    <span id='closeButton'>x</span>
     <span class="title-notification--box">Upcoming Event</span>
 
-<p><a style="color: white;" href="/5weekplus/week3.html">Computing the Meanings of Words in Reading Cooperative Division of Labor Between Visual and Phonological Processes</a></p>
-<p>2016-11-13, 22:30, GMT+8</p>
+<p><a style="color: white;" href="/5weekplus/week6.html">Neural Variability and Sampling-Based ProbabilisticRepresentations in the Visual Cortex</a></p>
+<p>2016-12-04 22:30:00, GMT+8</p>
 
 </div>
 
@@ -196,9 +197,24 @@
     x.className = "show";
 
     // After 3 seconds, remove the show class from DIV
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 8000);
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 80000);
 }
+$(document).ready(function() {
+    $('#closeButton').on('click', function(e) { 
+        $('#snackbar').remove(); 
+    });
+});
 </script>
+
+<style>
+#closeButton {
+    float:right;
+    display:inline-block;
+    padding:2px 5px;
+    cursor: pointer;
+}
+
+</style>
 
 
 <div style="margin-bottom:5em;">

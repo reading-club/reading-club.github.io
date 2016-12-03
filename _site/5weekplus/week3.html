@@ -196,7 +196,134 @@
 
 
 
+<ul id="markdown-toc">
+  <li><a href="#background" id="markdown-toc-background">Background</a></li>
+  <li><a href="#computational-model-of-reading" id="markdown-toc-computational-model-of-reading">Computational Model of Reading</a>    <ul>
+      <li><a href="#some-issues" id="markdown-toc-some-issues"><strong>Some Issues</strong></a></li>
+      <li><a href="#model-details" id="markdown-toc-model-details"><strong>Model Details</strong></a></li>
+      <li><a href="#division-of-labor" id="markdown-toc-division-of-labor"><strong>Division of Labor</strong></a></li>
+      <li><a href="#the-models-basic-properties" id="markdown-toc-the-models-basic-properties"><strong>The Model’s Basic Properties</strong></a></li>
+    </ul>
+  </li>
+  <li><a href="#whats-more" id="markdown-toc-whats-more">What’s more?</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
+</ul>
 
+<h2 id="background">Background</h2>
+
+<p><strong><em>“Essentially, all models are wrong, but some are useful.” ———— George E. P. Box</em></strong></p>
+
+<p>Although humans have been reading for several thousand years and studying reading for more than a century, the mechanisms governing the acquisition, use and breakdown of this skill continue to be the subject of considerable interest and controversy…</p>
+
+<figure>
+  <p><img src="/assets/posts/Computing-the-Meanings-of-Words-in-Reading/Schematic-representation-of-the-different-levels-of-analysis-in-the-Multiple-Systems-Model-of-Reading.png" alt="" /></p>
+</figure>
+
+<p>Reading development could be considered as a complex system across different levels in which other complex systems embedded.</p>
+
+<figure>
+  <p><img src="/assets/posts/Computing-the-Meanings-of-Words-in-Reading/BrainEnglish.jpg" alt="" /></p>
+</figure>
+
+<p>Why it is important? The practical reasons is about how reading should be taught. See <a href="https://en.wikipedia.org/wiki/Teaching_reading:_whole_language_and_phonics">wikipedia</a> for the Reading Wars.</p>
+
+<p>Researchers in reading research investigate both typical and atypical reading development. Two levels: word reading and reading comprehension. Here we focus on word reading.</p>
+
+<h2 id="computational-model-of-reading">Computational Model of Reading</h2>
+
+<p>There are many theories relating to development of word reading but fewer can be simulated computationally. See <a href="http://www.cogsci.mq.edu.au/~ssaunder/DRC/">here</a> for the Dual Route Cascaded (DRC) Model of Visual Word Recognition and Reading Aloud as an example.</p>
+
+<figure>
+  <p><img src="/assets/posts/Computing-the-Meanings-of-Words-in-Reading/The-DRC-dual-route-cascaded-model-of-reading.png" alt="" /></p>
+</figure>
+
+<p>The DRC model is largely inspired by clinical observations. Based on the philosophy of symbolism, this model argues against connectionism for which artificial neural networks are important tools.</p>
+
+<p>Now look at this connectionist model:</p>
+
+<figure>
+  <p><img src="/assets/posts/Computing-the-Meanings-of-Words-in-Reading/The-triangle-model.jpeg" alt="" /></p>
+</figure>
+
+<p>The key point is that it assumes some general architecture, algorithm, or other principles in modeling reading development.</p>
+
+<p>“Smith’s argument about the difﬁculties involved in using phonological mediation rests on the assumption that spelling-sound correspondences are <strong>encoded by rules</strong>. Connectionist models such as Seidenberg and McClelland’s (1989) subsequently provided an alternative in which the correspondences are <strong>encoded by weights on connections between units</strong> involved in the orthography-phonology mapping.”</p>
+
+<h3 id="some-issues"><strong>Some Issues</strong></h3>
+<p>1) Localist vs Distributed Representations: accessing vs computing; <br />
+  2) Attractor structures: A network has an attractor basin when it develops stable points in activation space, and has the tendency to pull nearby points toward the stable attractor points. In this way, partial or degraded patterns of activity are driven towards more stable, familiar representations;   <br />
+  3) Supervised Learning; <br />
+  4) Catastrophic Interference: Training a simple feedforward network on one set of patterns followed by training the network on a second set of patterns resulted in unlearning of the ﬁrst set.</p>
+
+<h3 id="model-details"><strong>Model Details</strong></h3>
+<p>1) Training Corpus: 6,103 monosyllabic words;  <br />
+  2) Semantic Representations: A total of 1,989 semantic features were generated from WordNet online semantic database to encode the 6,103 words; <br />
+  3) Phonological Representations: 25 phonological features x 8 phoneme slots = 200 units were used to encode the each CCCVCCCC word, with vowel centering to minimize the “dispersion” problem; <br />
+  4) The Phonology-Semantics Model:</p>
+
+<figure>
+  <p><img src="/assets/posts/Computing-the-Meanings-of-Words-in-Reading/PHONOLOGY_SEMANTICS.png" alt="" /></p>
+</figure>
+
+<figure>
+  <p><img src="/assets/posts/Computing-the-Meanings-of-Words-in-Reading/PHONOLOGY_SEMANTICS_TASKS.png" alt="" /></p>
+</figure>
+
+<p>5) The Reading Model:</p>
+
+<figure>
+  <p><img src="/assets/posts/Computing-the-Meanings-of-Words-in-Reading/The_implemented_reading_model.png" alt="" /></p>
+</figure>
+
+<p>6) Orthographic Representations: 26 features corresponding to the letters of the alphabet X 10 slots = 260 units -&gt; 111 units (slot-based localist)</p>
+
+<h3 id="division-of-labor"><strong>Division of Labor</strong></h3>
+
+<figure>
+  <p><img src="/assets/posts/Computing-the-Meanings-of-Words-in-Reading/units_over_time.png" alt="" /></p>
+</figure>
+
+<figure>
+  <p><img src="/assets/posts/Computing-the-Meanings-of-Words-in-Reading/BOOT.png" alt="" /></p>
+</figure>
+
+<figure>
+  <p><img src="/assets/posts/Computing-the-Meanings-of-Words-in-Reading/lesioning.png" alt="" /></p>
+</figure>
+
+<figure>
+  <p><img src="/assets/posts/Computing-the-Meanings-of-Words-in-Reading/Accuracy_of_each_component.png" alt="" /></p>
+</figure>
+
+<h3 id="the-models-basic-properties"><strong>The Model’s Basic Properties</strong></h3>
+<p>1) Activation of meaning from multiple sources;  <br />
+  2) Course of learning;  <br />
+  3) Precedence of phonological pathway in acquisition;  <br />
+  4) Development of the orth -&gt; sem pathway;  <br />
+  5) Capacity of the orth -&gt; sem pathway;  <br />
+  6) Co-operative computation of meaning.</p>
+
+<h2 id="whats-more">What’s more?</h2>
+
+<p>1) No Panacea! Every model has its own advantage and disadvantage and none can explain everything of reading behavior.  <br />
+  2) Modeling Chinese and bilingual:</p>
+
+<figure>
+  <p><img src="/assets/posts/Computing-the-Meanings-of-Words-in-Reading/the_monolingual_model.png" alt="" /></p>
+</figure>
+
+<figure>
+  <p><img src="/assets/posts/Computing-the-Meanings-of-Words-in-Reading/the_bilingual_model.png" alt="" /></p>
+</figure>
+
+<h2 id="references">References</h2>
+<p>Harm, M. W., &amp; Seidenberg, M. S. (2004) Computing the Meanings of Words in Reading: Cooperative Division of Labor Between Visual and Phonological Processes. Psychological Review, 111(3), 662-720.</p>
+
+<p>Cortese, M. J., &amp; Balota, D. A. (2012) Visual Word Recognition in Skilled Adult Readers. in The Cambridge Handbook of Psycholinguistics (pp.159-185).</p>
+
+<p>Yang J., McCandliss B.D., Shu H., &amp; Zevin, J. D. (2009) Simulating language-specific and language-general effects in a statistical learning model of Chinese reading. Journal of Memory and Language, 61(2), 238–257.</p>
+
+<p>Yang, J., Shu, H., McCandliss, B. D., &amp; Zevin, J. D. (2013) Orthographic influences on division of labor in learning to read Chinese and English: insights from computational modeling. Bilingualism: Language and Cognition, 16(2), 354–366.</p>
 
 
 

@@ -3,6 +3,7 @@
 
 <!-- The actual snackbar -->
 <div id="snackbar">
+    <span id='closeButton'>x</span>
     <span class="title-notification--box">Upcoming Event</span>
 {% assign noti = site.data.notifications |  where:"event","system" %}
 <p><a style="color: white;" href="{{ noti[0].link }}">{{ noti[0].upcoming }}</a></p>
@@ -23,6 +24,21 @@
     x.className = "show";
 
     // After 3 seconds, remove the show class from DIV
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 8000);
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 80000);
 }
+$(document).ready(function() {
+    $('#closeButton').on('click', function(e) { 
+        $('#snackbar').remove(); 
+    });
+});
 </script>
+
+<style>
+#closeButton {
+    float:right;
+    display:inline-block;
+    padding:2px 5px;
+    cursor: pointer;
+}
+
+</style>
