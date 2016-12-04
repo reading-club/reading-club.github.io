@@ -9,7 +9,6 @@
 ">
 <meta name="keywords" content="">
 <link rel="canonical" href="/5weekplus/week5.html">
-
         <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
 
 <script src="/assets/markdown.min.js"></script>
@@ -124,7 +123,6 @@
 
 <link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css">
 <link rel="stylesheet" href="/assets/css/custom.css">
-
     </head>
 
     <body>
@@ -204,39 +202,30 @@
 
 <h3 id="reinforcement-learning">Reinforcement Learning</h3>
 <p>Future reward and its Bellman’s expression:
-<script type="math/tex">\begin{equation}
-R_{t}=\sum_{ {t}'=t}^{T }\gamma ^{ {t'}-t}r_{ {t}'}=r+\gamma R_{t^{'} }
-\end{equation}</script></p>
+<script type="math/tex">R_{t}=\sum_{ {t}'=t}^{T }\gamma ^{ {t'}-t}r_{ {t}'}=r+\gamma R_{t^{'} }</script></p>
 
 <p>The optimal action-value function:
-<script type="math/tex">\begin{equation}
-Q^{*}(s,a)=max_{\pi } \mathbb{E}[R_{t}|s_{t}=s,a_{t}=a,\pi]
-\end{equation}</script> 
+<script type="math/tex">Q^{*}(s,a)=max_{\pi } \mathbb{E}[R_{t}|s_{t}=s,a_{t}=a,\pi]</script> 
 This means the maximum expected return achievable, after seeing some sequence $s$ and then taking some action $a$ and by following policy $\pi$, which mapping sequence to actions.</p>
 
 <p>The $Q^{<em>}(s,a)$ could be expressed using Bellman’s equation:
-<script type="math/tex">\begin{equation}
-Q^{*}(s,a)=\mathbb{E}_{s^{'}\sim  \varepsilon }[r+\gamma max_{ {a}'}Q^{*}({s}',{a}')|s,a]
-\end{equation}</script> 
+<script type="math/tex">Q^{*}(s,a)=\mathbb{E}_{s^{'}\sim  \varepsilon }[r+\gamma max_{ {a}'}Q^{*}({s}',{a}')|s,a]</script> 
 However, $Q^{</em>}(s,a)$ is an optimal value. Normally, people use using the Bellman equation 
-<script type="math/tex">\begin{equation}
-Q_{i+1}(s,a)=\mathbb{E}[r+\gamma max_{ {a}'}Q_{i}({s}',{a}')|s,a]
-\end{equation}</script>
+<script type="math/tex">Q_{i+1}(s,a)=\mathbb{E}[r+\gamma max_{ {a}'}Q_{i}({s}',{a}')|s,a]</script>
 as an iterative update to converge to the optimal action-value function, when $Q_{i}\rightarrow Q^{*} $ as $i \rightarrow \infty $.</p>
 
 <p>In this article, a neural network is used as a non-linear approximator to estimate the action-value function, $Q(s,a;\theta )\approx Q^{*}(s,a)$, where $\theta$ stands for the weights.
 The loss function could be decribed as follows:
-<script type="math/tex">\begin{equation}
-L_{i}(\theta_{i})=\mathbb{E}_{s,a\sim  \rho (\cdot)}[(y_{i}-Q(s,a;\theta_{i}))^{2}]
-\end{equation}</script>
-, where $y_{i}=\mathbb{E}<em>{ {s}’\sim \varepsilon }[r+\gamma max</em>{ {a}’}Q_{i}({s}’,{a}’;\theta_{i-1})|s,a]$ and $rho(s,a)$ is a probability distribution over sequences $s$ and actions $a$.</p>
+<script type="math/tex">L_{i}(\theta_{i})=\mathbb{E}_{s,a\sim  \rho (\cdot)}[(y_{i}-Q(s,a;\theta_{i}))^{2}]</script>
+, where $y_{i}=\mathbb{E}<em>{ {s}’\sim \varepsilon }[r+\gamma max</em>{ {a}’}Q_{i}({s}’,{a}’;\theta_{i-1})|s,a]$ and $\rho(s,a)$ is a probability distribution over sequences $s$ and actions $a$.</p>
 
 <h3 id="epsilon--greedy">$\epsilon $-greedy</h3>
 <p>The next action is selected using $\epsilon $-greedy strategy.
+<script type="math/tex">% <![CDATA[
 \begin{cases}
-a=\underset{a\in  A}{max}Q^{*}(s,a)&amp; \text{with probability }1-\epsilon <br />
-\text{random action}&amp; \text{with probability }\epsilon
-\end{cases}</p>
+a=\underset{a\in  A}{max}Q^{*}(s,a)& \text{with probability }1-\epsilon \\
+\text{random action}& \text{with probability }\epsilon
+\end{cases} %]]></script></p>
 
 <h2 id="algorithm">Algorithm</h2>
 <figure>

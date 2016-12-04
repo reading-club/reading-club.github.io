@@ -12,8 +12,8 @@ gitter: reading-club/Lobby
 <span class="title-notification--box">Upcoming Event</span>
 {% assign noti = site.data.notifications |  where:"event","5-week-plus" %}
 <p><a href="{{ noti[0].link }}">{{ noti[0].upcoming }}</a></p>
-<p>{{ noti[0].schedule }}, <span><a href="{{ noti[0].timezone }}">tool for different timezones</a></span></p>
-</section>>
+<p>{{ noti[0].schedule }} <span><a href="{{ noti[0].timezone }}">(tool for different timezones)</a></span></p>
+</section>
 
 
 

@@ -2,7 +2,13 @@
   link: https://github.com/ErbB4
 
 - id: OctoMiao
+  name: 
   link: https://github.com/emptymalei
+  topics: 
+    - Physics
+    - Neuroscience
+    - Complex Networks
+  intro: Physics PhD candidate
 
 - id: skyworlds
   link: https://github.com/skyworlds
