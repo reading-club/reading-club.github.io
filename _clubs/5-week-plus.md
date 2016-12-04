@@ -3,7 +3,7 @@ layout: clubs
 title:  "The 5-Week+"
 subtitle: ""
 info: 10:00 PM, Sunday, GMT+8
-status: OPEN
+status: CLOSED
 date: 2016-10-18
 gitter: reading-club/Lobby
 ---
