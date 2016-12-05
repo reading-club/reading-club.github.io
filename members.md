@@ -22,4 +22,4 @@ permalink: /members
 
 
 
-The list generated from a data file. If you find your id missing or incorrect, speak up in the wechat group. More info can be displayed here on demand.
+The list is generated from a [data file](https://github.com/reading-club/reading-club.github.io/blob/master/_data/members.yml). If you find your id missing or incorrect, speak up in the wechat group. More info can be displayed here on demand.
