@@ -1,10 +1,10 @@
 - event: system
-  upcoming: "New Project Awaits"
-  schedule: "2016-12-11 22:30:00, GMT+8"
-  link: /
+  upcoming: "XNN"
+  schedule: "2017-06-03 22:30:00, GMT+8"
+  link: /clubs/xnn.html
 
 - event: 5-week-plus
   upcoming: "Project Done!"
   schedule: ""
   timezone: http://time.is/2230_6_Nov_2016_in_Beijing/Ireland/Denver/Berlin?Reading_Club
-  link: 
+  link:

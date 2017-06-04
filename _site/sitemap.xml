@@ -6,24 +6,9 @@
   
     
     <url>
-      <loc>/about/</loc>
+      <loc>http://localhost:4000/about/</loc>
       
-        <lastmod>2016-12-04T16:25:38-07:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>/coordination/</loc>
-      
-        <lastmod>2016-12-04T16:25:38-07:00</lastmod>
+        <lastmod>2017-06-04T10:47:10-06:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -36,9 +21,24 @@
   
     
     <url>
-      <loc>/categories/design/</loc>
+      <loc>http://localhost:4000/coordination/</loc>
       
-        <lastmod>2016-12-04T16:25:38-07:00</lastmod>
+        <lastmod>2017-06-04T10:47:10-06:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/categories/design/</loc>
+      
+        <lastmod>2017-06-04T10:47:10-06:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -53,9 +53,9 @@
   
     
     <url>
-      <loc>/</loc>
+      <loc>http://localhost:4000/</loc>
       
-        <lastmod>2016-12-04T16:25:38-07:00</lastmod>
+        <lastmod>2017-06-04T10:47:10-06:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -68,56 +68,9 @@
   
     
     <url>
-      <loc>/issues.html</loc>
+      <loc>http://localhost:4000/issues.html</loc>
       
-        <lastmod>2016-12-04T16:25:38-07:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.9</priority>
-      
-    </url>
-    
-  
-    
-  
-    
-    <url>
-      <loc>/members</loc>
-      
-        <lastmod>2016-12-04T16:25:38-07:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>/categories/productivity/</loc>
-      
-        <lastmod>2016-12-04T16:25:38-07:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>/related-clubs.html</loc>
-      
-        <lastmod>2016-12-04T16:25:38-07:00</lastmod>
+        <lastmod>2017-06-04T10:47:10-06:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -131,12 +84,59 @@
     
   
     
+    <url>
+      <loc>http://localhost:4000/members</loc>
+      
+        <lastmod>2017-06-04T10:47:10-06:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
   
     
     <url>
-      <loc>/categories/tools/</loc>
+      <loc>http://localhost:4000/categories/productivity/</loc>
       
-        <lastmod>2016-12-04T16:25:38-07:00</lastmod>
+        <lastmod>2017-06-04T10:47:10-06:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/related-clubs.html</loc>
+      
+        <lastmod>2017-06-04T10:47:10-06:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.9</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/categories/tools/</loc>
+      
+        <lastmod>2017-06-04T10:47:10-06:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
